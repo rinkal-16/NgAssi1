@@ -1,0 +1,132 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<style>
+  :host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  div {
+    position: fixed;
+  }
+  
+  nav {
+    background-color: lightpink;
+    width: 200px;
+    border: 15px solid green;
+    padding: 30px;
+    margin: 10px;
+ }
+    
+
+  
+  .lay {
+    margin:100px 800px;
+  }
+  .lay2{
+    margin: 100px 1200px;
+  }
+  .lay1{
+    margin : 100px 400px;    
+  }
+
+
+  a,
+  a:visited,
+  a:hover {
+  color: #1976d2;
+  text-decoration: none;
+ }
+ 
+ a:hover {
+ color: #125699;
+ }
+
+ .column {
+   float: left;
+   width:25%;
+ }
+ .row:after {
+   content: "";
+   display: block;
+   clear: both;
+ }
+
+</style>
+
+<!--Cards-->
+<div class="row">
+  <div class="lay1 column">
+    <a>
+    <nav>Offer-1
+    <img src="assets/Image/offer1.png" alt="">
+        <button routerLink="sub-comp1" > 
+          Button</button>
+    </nav>
+    </a>
+  </div>
+    
+  <div class="lay column">
+    <a>
+    <nav>Offer-2
+    <img src="assets/Image/offer1.png" alt="">
+    <button routerLink="sub-comp2" >    
+      Button</button>
+    </nav></a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="lay2 column"> 
+    <a>
+    <nav>Offer-3
+      <img src="assets/Image/offer1.png" alt="">
+      <button routerLink="sub-comp3" >  
+        Button</button>
+    </nav></a>
+  </div>
+
+  <div class="lay2 column"> 
+    <nav>Offer-4
+      
+          <button routerLink="sub-comp4">Button</button>
+    </nav>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+<router-outlet></router-outlet>
+
+
+
